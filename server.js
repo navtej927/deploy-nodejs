@@ -25,7 +25,7 @@ app.prepare().then(() => {
 
     server.get('/api/ping', async (req, res) => {
         res.send({
-            1: 1
+            "env": process.env.NODE_ENV
         });
     });
 
