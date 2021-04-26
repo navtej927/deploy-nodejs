@@ -1,6 +1,6 @@
 function HomePage() {
     return <div>
-        <p>This is my application v2</p>
+        <p>This is application v3</p>
     </div >
 }
 

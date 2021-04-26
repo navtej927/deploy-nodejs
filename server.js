@@ -1,10 +1,11 @@
 const next = require('next');
 const express = require("express");
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8000;
 const isDevelopment = process.env.NODE_ENV !== 'production';
+console.log("isDevelopment", isDevelopment)
 
-const app = next({ isDevelopment });
+const app = next({ dev:  isDevelopment});
 const handle = app.getRequestHandler();
 
 
